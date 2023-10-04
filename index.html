@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puzzle 3x3</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.js"></script>
+   
+    <div id="container">
+        <div id="puzzle-container">
+
+            <div class="tile"><img src="images/1.jpg" alt= "1">
+                <span class="tile-number">1</span>
+            </div>
+            <div class="tile"><img src="images/2.jpg" alt="2">
+                <span class="tile-number">2</span>
+            </div>
+            <div class="tile"><img src="images/3.jpg" alt="3">
+                <span class="tile-number">3</span>
+            </div>
+            <div class="tile"><img src="images/4.jpg" alt="4">
+                <span class="tile-number">4</span>
+            </div>
+            <div class="tile"><img src="images/5.jpg" alt="5">
+                <span class="tile-number">5</span>
+            </div>
+            <div class="tile"><img src="images/6.jpg" alt="6">
+                <span class="tile-number">6</span>
+            </div>
+            <div class="tile"><img src="images/7.jpg" alt="7">
+                <span class="tile-number">7</span>
+            </div>
+            <div class="tile"><img src="images/8.jpg" alt="8">
+                <span class="tile-number">8</span>
+            </div>
+        </div>
+        <div class="hint">
+            <img id="hint-image" src="images/full.jpg" alt="Hint">
+        </div>
+    </div>
+   
+    <div id="acoes">
+        <div class="content"><br>
+            <button id="random">Random</button>
+        </div>
+        <div class="content"><br>
+            <select id="type">
+                <option value="1">Bfs</option>
+                <option value="2">A* f(x) = g(x)</option>
+                <option value="3">A* f(x) = g(x) + h(x)</option>
+            </select>
+            <div class="content"><br>
+                <button id="search">Search</button>
+            </div>
+    </div>
+
+    <script src="./src/js/move.js"></script>
+    <script src="./src/js/heuristic.js"></script>
+    <script src="./src/js/index.js"></script>
+    
+</body>
+</html>
